@@ -1,19 +1,21 @@
-package controll;
+package controller;
 
-import object.Point;
+import data.Point;
 
 public class PointController {
+    public void addX(Point p) {
+        p.setX(p.getX() + 1);
+    }
 
-    int addX(Point point){
-       return point.getX() + 1;
+    public void minusX(Point p) {
+        p.setX(p.getX() - 1);
     }
-    int minusX(Point point){
-        return point.getX() - 1;
+
+    public void addY(Point p) {
+        p.setY(p.getY() + 1);
     }
-    int addY(Point point){
-        return point.getY() + 1;
-    }
-    int minusY(Point point){
-        return point.getY() - 1;
+
+    public void minusY(Point p) {
+        p.setY(p.getY() - 1);
     }
 }
